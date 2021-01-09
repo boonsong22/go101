@@ -24,3 +24,13 @@ func TestFizzBuzzGiven2(t *testing.T) {
 		t.Errorf("given %d want %q but get %q\n", given, want, get)
 	}
 }
+
+func TestFizzBuzzString(t *testing.T) {
+	given := 2
+	want := "2"
+
+	get := fizzbuzz.Say(given)
+	if want != get {
+		t.Errorf("given %d want %q but get %q\n", given, want, get)
+	}
+}
